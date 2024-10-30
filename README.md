@@ -10,10 +10,10 @@ O projeto desenvolve três diferentes sistemas de controle para estabilizar um p
 Este projeto visa comparar o desempenho de cada abordagem em relação à precisão de controle, adaptabilidade, eficiência e capacidade de lidar com incertezas.
 
 ## :file_folder: Estrutura do Projeto
-   - src/: Código-fonte do projeto, organizado nas subpastas:
-      - FIS/: Implementação do Sistema de Inferência Fuzzy.
-      - GeneticFuzzy/: Implementação do Sistema Genético-Fuzzy.
-      - NeuroFuzzy/: Implementação do Sistema Neuro-Fuzzy.
+   - **src/:** Código-fonte do projeto, organizado nas subpastas:
+      - **FIS/:** Implementação do Sistema de Inferência Fuzzy.
+      - **GeneticFuzzy/:** Implementação do Sistema Genético-Fuzzy.
+      - **NeuroFuzzy/:** Implementação do Sistema Neuro-Fuzzy.
 
 ## :package: Pré-requisitos
 ℹ️ Python 3.8 ou superior
