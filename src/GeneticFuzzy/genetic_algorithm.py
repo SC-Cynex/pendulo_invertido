@@ -1,5 +1,5 @@
 import random
-from fitness import evaluate_fitness
+from GeneticFuzzy.fitness import evaluate_fitness
 
 POPULATION_SIZE = 10
 GENERATIONS = 30

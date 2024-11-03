@@ -1,5 +1,5 @@
-from fuzzy_system import create_fis
-from genetic_algorithm import generate_initial_population, evaluate_population, selection, crossover, mutate
+from GeneticFuzzy.fuzzy_system import create_fis
+from GeneticFuzzy.genetic_algorithm import generate_initial_population, evaluate_population, selection, crossover, mutate
 
 def genetic_algorithm():
     sim = create_fis()
