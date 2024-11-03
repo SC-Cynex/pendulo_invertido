@@ -10,33 +10,58 @@ O projeto desenvolve três diferentes sistemas de controle para estabilizar um p
 Este projeto visa comparar o desempenho de cada abordagem em relação à precisão de controle, adaptabilidade, eficiência e capacidade de lidar com incertezas.
 
 ## :file_folder: Estrutura do Projeto
-   - **src/:** Código-fonte do projeto, organizado nas subpastas:
-      - **FIS/:** Implementação do Sistema de Inferência Fuzzy.
-      - **GeneticFuzzy/:** Implementação do Sistema Genético-Fuzzy.
-      - **NeuroFuzzy/:** Implementação do Sistema Neuro-Fuzzy.
+   - *src/:* Código-fonte do projeto, organizado nas subpastas:
+
+      - *FIS/:* Implementação do Sistema de Inferência Fuzzy.
+         - *fuzzy_control.py:* Define o sistema de controle fuzzy.
+
+      - *GeneticFuzzy/:* Implementação do Sistema Genético-Fuzzy.
+          - *fitness.py:* Avalia a adequação das soluções no contexto do controle fuzzy.
+          - *fuzzy_system.py:* Cria o sistema de inferência fuzzy (FIS).
+          - *genetic_algorithm.py:* Contém funções para a implementação do algoritmo genético.
+          - *genetic_fuzzy_control.py:* Implementa o algoritmo genético para otimização dos parâmetros do sistema fuzzy.
+
+      - *NeuroFuzzy/:* Implementação do Sistema Neuro-Fuzzy.
+          - *neuro_fuzzy_control.py:* Integra um sistema fuzzy com uma rede neural para melhorar o controle.
+
+      - *comparation.py:* Realiza a comparação entre os sistemas de controle.
 
 ## :package: Pré-requisitos
 ℹ️ Python 3.8 ou superior
 
+*Bibliotecas*
+- NumPy
+- scikit-fuzzy
+- TensorFlow
+
+```python
+pip install numpy scikit-fuzzy tensorflow
+```
 ## ⏯️ Uso
 Cada sistema pode ser executado individualmente para testar o desempenho:
 
 #### 1. Para o Sistema FIS:
 
-```
+```python
 python src/FIS/fuzzy_control.py
 ```
 
 #### 2. Para o Sistema Genético-Fuzzy:
 
-```
+```python
 python src/GeneticFuzzy/genetic_fuzzy_control.py
 ```
 
 #### 3. Para o Sistema Neuro-Fuzzy:
 
-```
+```python
 python src/NeuroFuzzy/neuro_fuzzy_control.py
+```
+
+### 4. Para a Comparação das Três Soluções
+
+```python
+python src/comparation.py
 ```
 
 ##  :bar_chart: Comparação e Análise
