@@ -17,14 +17,12 @@ def generate_report():
     print("=============================================")
     print()
 
-    # Dados de teste
     test_data = [
         (-45, -5, -5, -2),
         (0, 0, 0, 0),
         (45, 5, 5, 2),
     ]
 
-    # Resultados e avaliação
     print("### Avaliação do Sistema Fuzzy ###")
     fuzzy_forces = [run_fuzzy_control(angle, ang_vel, pos, car_vel) for angle, ang_vel, pos, car_vel in test_data]
     for (angle, ang_vel, pos, car_vel), force in zip(test_data, fuzzy_forces):
